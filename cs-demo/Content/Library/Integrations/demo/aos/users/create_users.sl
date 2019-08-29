@@ -2,23 +2,23 @@ namespace: Integrations.demo.aos.users
 flow:
   name: create_users
   inputs:
-    - file_host: '${itom1.hcm.demo.local}'
-    - file_user: '${root}'
+    - file_host: itom1.hcm.demo.local
+    - file_user: root
     - file_password:
-        default: '${S0lutions2016}'
+        default: S0lutions2016
         sensitive: true
-    - file_path: '${/tmp/users.txt}'
-    - db_host: '${AOS VM}'
-    - db_user: '${postgres}'
+    - file_path: /tmp/users.txt
+    - db_host: AOS VM
+    - db_user: postgres
     - db_password:
-        default: '${admin}'
+        default: admin
         sensitive: true
-    - mm_url: '${https://mattermost.hcm.demo.local}'
-    - mm_user: '${admin}'
+    - mm_url: 'https://mattermost.hcm.demo.local'
+    - mm_user: admin
     - mm_password:
-        default: '${Cloud_123}'
+        default: eeujbpz9ufbc8rxcyj9qhcgq3a
         sensitive: true
-    - mm_chanel_id: '${eeujbpz9ufbc8rxcyj9qhcgq3a}'
+    - mm_chanel_id: eeujbpz9ufbc8rxcyj9qhcgq3a
   workflow:
     - read_users:
         do:
@@ -44,11 +44,11 @@ extensions:
         x: 207
         'y': 110
         navigate:
-          0b235b2e-00ea-f978-d173-462336b74731:
+          39243e35-d192-047e-bb97-65fc093337a1:
             targetId: 1a32cec1-0564-a303-fd5f-bcfb2e2ed8a3
             port: SUCCESS
     results:
       SUCCESS:
         1a32cec1-0564-a303-fd5f-bcfb2e2ed8a3:
-          x: 412
-          'y': 115
+          x: 725
+          'y': 113
